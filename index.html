@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Temperature conversion</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="bg-gray-100 font-sans select-none">
+    <form class="m-auto max-w-80 rounded-lg bg-white p-6 text-center shadow-xl">
+      <h1 class="bg-blue-400 text-white rounded text-3xl">
+        Temperature conversion
+      </h1>
+      <input
+        class="my-4 w-3/6 rounded border-2 border-black text-center text-3xl"
+        type="number"
+        id="textBox"
+        value="0" /><br />
+      <input type="radio" id="toFahrenheit" name="unit" />
+      <label class="text-lg font-bold" for="toFahrenheit"
+        >Celsius to Fahrenheit</label
+      >
+      <br />
+      <input type="radio" id="toCelsius" name="unit" />
+      <label class="text-lg font-bold" for="toCelsius"
+        >Fahrenheit to Celsius</label
+      >
+      <br />
+      <button
+        class="my-4 hover:shadow-lg hover:shadow-red-500 cursor-pointer rounded bg-red-400 px-2 py-3 text-lg text-white hover:bg-red-500"
+        type="button"
+        id="submitBtn">
+        Submit
+      </button>
+      <p class="text-lg font-bold" id="result">Select a unit</p>
+    </form>
+    <script src="script.js"></script>
+  </body>
+</html>
